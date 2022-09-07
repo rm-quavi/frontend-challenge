@@ -32,9 +32,9 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .sidebar {
   color: $c-text;
-  border-right: 5px solid $c-primary;
   padding-top: 16px;
   height: 100%;
+  border-bottom: 8px solid $c-primary;
 
   .list-header {
     padding-left: 16px;
@@ -54,6 +54,13 @@ export default Vue.extend({
     &:last-child {
       border-bottom: 1px solid white;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sidebar {
+    border-right: 5px solid $c-primary;
+    border-bottom: none;
   }
 }
 </style>

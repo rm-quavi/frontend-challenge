@@ -3,7 +3,7 @@
     <b-row class="mx-0">
       <b-col cols="12" class="heading-container">
         <h1 class="heading">Load profiles</h1>
-        <h5 class="subheading pl-3">Available datasets</h5>
+        <h5 class="subheading pl-lg-3 pb-2 pb-lg-0">Available datasets</h5>
       </b-col>
 
       <b-col class="navigation-container">
@@ -63,9 +63,12 @@ export default Vue.extend({
     max-width: 100%;
   }
 
-  .heading-container > * {
-    color: white;
-    display: inline-block;
+  .heading-container  {
+    padding: 0;
+    & > * {
+      color: white;
+      display: inline-block;
+    }
   }
 }
 
