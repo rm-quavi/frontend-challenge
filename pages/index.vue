@@ -46,14 +46,14 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .wrapper {
-  background-color: #102D4C;
+  background-color: $c-primary;
   min-height: 100vh;
   padding: 20px;
   margin: 0;
 
   .chart-container,
   .navigation-container {
-    background-color: #F1F1F1;
+    background-color: $c-background;
     padding: 0;
     margin: 0;
   }
@@ -74,6 +74,8 @@ export default Vue.extend({
 
 @media screen and (min-width: 768px) {
   .wrapper {
+    padding: 20px 40px;
+
     .navigation-container {
       width: 300px;
       max-width: 300px;

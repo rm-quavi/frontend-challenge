@@ -156,7 +156,7 @@ export default Vue.extend({
 
 <style scoped lang="scss">
 .chart {
-  padding: 20px 28px;
+  padding: 16px;
 
   .heading-container {
     color: $c-primary;
@@ -165,7 +165,7 @@ export default Vue.extend({
 
     .load-name {
       font-weight: bold;
-      font-size: 26px;
+      font-size: 22px;
       margin-bottom: 0;
     }
 
@@ -191,6 +191,16 @@ export default Vue.extend({
       background-repeat: no-repeat;
       background-position-x: calc(100% - 5px);
       background-position-y: 5px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .chart {
+    padding: 20px 28px 60px;
+
+    .load-name {
+      font-size: 28px;
     }
   }
 }
